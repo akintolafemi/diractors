@@ -13,10 +13,18 @@ declare global {
   }
 }
 
+export type DrawerRenderProps = {
+  Drawer: undefined;
+}
+
 export type RootStackParamList = {
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
   Modal: undefined;
   NotFound: undefined;
+
+  Landing: undefined;
+  Login: undefined;
+  Forgotpassword: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
