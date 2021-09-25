@@ -11,7 +11,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
 
-import Colors from '../constants/Colors';
+import {Colors, Fonts} from '../common';
 import useColorScheme from '../hooks/useColorScheme';
 
 import LandingScreen from "../screens/Landing";
@@ -21,6 +21,14 @@ import SingupScreen from '../screens/Signup';
 import OTPScreen from '../screens/Signup/OTP';
 import CompletesetupScreen from '../screens/Signup/Completesetup';
 import DrawerNavigation from './DrawerNavigation';
+import SearchScreen from '../screens/Home/Search';
+import SearchedProfileScreen from '../screens/Profile/SearchedProfile';
+import SettingsScreen from '../screens/Profile/Settings';
+import PasswordScreen from '../screens/Profile/Password';
+import PrivacyScreen from '../screens/Profile/Privacy';
+import PhoneNumberScreen from '../screens/Profile/PhoneNumber';
+import EmailAddressScreen from '../screens/Profile/EmailAddress';
+
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
@@ -85,7 +93,64 @@ const routes: Array<RenderProps> = [
       title: ''
     },
   },
+  {
+    name: 'Search',
+    component: SearchScreen,
+    options: {
+      headerShown: false,
+    },
+  },
+  {
+    name: 'SearchedProfile',
+    component: SearchedProfileScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
+  {
+    name: 'Settings',
+    component: SettingsScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
+  {
+    name: 'Password',
+    component: PasswordScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
+  {
+    name: 'Privacy',
+    component: PrivacyScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
+  {
+    name: 'PhoneNumber',
+    component: PhoneNumberScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
+  {
+    name: 'EmailAddress',
+    component: EmailAddressScreen,
+    options: {
+      headerShown: true,
+      headerTitleStyle: headerTitleStyle,
+    },
+  },
 ];
+
+const headerTitleStyle = {color: Colors.darkText, fontSize: Fonts.h(20), fontFamily: Fonts.AVERTA_SEMIBOLD , fontWeight: '600', marginLeft: Fonts.w(0)};
 
 export function renderScreen({name, component, options = {}, initialParams = {}}: RenderProps) {
   return (

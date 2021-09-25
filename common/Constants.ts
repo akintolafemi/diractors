@@ -55,40 +55,48 @@ export const AccountTypes = [
   },
 ]
 
+export const AccountTypesOptions = [
+  {id: 1, name: 'Everyone'},
+  {id: 2, name: 'Directors'},
+  {id: 3, name: 'Actors'},
+  {id: 4, name: 'Producers'},
+  {id: 5, name: 'Script Writers'}
+];
+
 export const topRoundViews = [
   {
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   },{
     displayName: 'Angel',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png'
   }
 ];
 
@@ -97,7 +105,7 @@ export const postViews = [
     id: '1',
     displayName: 'Angel',
     fullName: 'Micheal Oluwafemi',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
     uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
     type: 'image',
     likes: 200,
@@ -105,7 +113,7 @@ export const postViews = [
     id: '1',
     displayName: 'Angel',
     fullName: 'Micheal Oluwafemi',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
     uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
     type: 'video',
     likes: 10,
@@ -113,7 +121,7 @@ export const postViews = [
     id: '1',
     displayName: 'Angel',
     fullName: 'Micheal Oluwafemi',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
     uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
     type: 'image',
     likes: 100,
@@ -121,7 +129,7 @@ export const postViews = [
     id: '1',
     displayName: 'Angel',
     fullName: 'Micheal Oluwafemi',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
     uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
     type: 'video',
     likes: 10,
@@ -129,9 +137,125 @@ export const postViews = [
     id: '1',
     displayName: 'Angel',
     fullName: 'Micheal Oluwafemi',
-    imagesrc: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
-    uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
-    type: 'image',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    uri: 'https://mdbootstrap.com/img/video/Tropical.mp4',
+    type: 'video',
     likes: 100,
   },
 ]
+
+export const profileSearchRes = [
+  {
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+    verified: true,
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+    verified: true,
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },{
+    id: '1',
+    displayName: 'Angel',
+    fullName: 'Micheal Oluwafemi',
+    displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+  },{
+    id: '1',
+    displayName: 'The Rock',
+    fullName: 'Dwayne Johnson',
+    displaypicture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Dwayne_Johnson_2014_%28cropped%29.jpg/330px-Dwayne_Johnson_2014_%28cropped%29.jpg',
+  },
+];
+
+export const notifications = [
+  {
+    id: '1',
+    displayName: 'The Rock',
+    senttime: 'Fri Sept 24 2021 13:04:46',
+    message: 'The Rock watched your profile for 10 minutes',
+    type: 'watch'
+  },{
+    id: '2',
+    displayName: 'The Rock',
+    senttime: 'Thur Sept 23 2021 13:04:46',
+    message: 'The Rock sent a message',
+    type: 'message'
+  }
+];
+
+export const menuList = [
+  {
+    id: 0,
+    label: 'Change Email',
+    icon: 'mail-outline',
+    route: 'EmailAddress',
+  },{
+    id: 1,
+    label: 'Change Phone Number',
+    icon: 'call-outline',
+    route: 'PhoneNumber',
+  },{
+    id: 2,
+    label: 'Security',
+    icon: 'lock-closed-outline',
+    route: 'Password',
+  },{
+    id: 3,
+    label: 'Privacy',
+    icon: 'shield-checkmark-outline',
+    route: 'Privacy',
+  }
+];

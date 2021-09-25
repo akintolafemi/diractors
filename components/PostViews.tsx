@@ -7,7 +7,7 @@ import { Video, AVPlaybackStatus } from 'expo-av';
 
 export const InstaStoryView: FunctionComponent<{
   id?: string;
-  imagesrc?: string;
+  displaypicture?: string;
   uri?: string;
   likes?: Number;
   type?: string;
@@ -19,7 +19,7 @@ export const InstaStoryView: FunctionComponent<{
   isVideoPlaying?: boolean;
 }> = ({
   id,
-  imagesrc,
+  displaypicture,
   uri,
   likes = 0,
   type,
@@ -81,12 +81,12 @@ export const InstaStoryView: FunctionComponent<{
       <>
         <Video
           ref={videoRef}
-          style={{ width: window.width, height: window.width }}
+          style={{ width: window.width, height: window.width * 0.625 }}
           source={{
             uri: uri,
           }}
           useNativeControls
-          resizeMode="cover"
+          resizeMode="contain"
           isLooping
         />
       </>
@@ -101,7 +101,7 @@ export const InstaStoryView: FunctionComponent<{
             rounded
             size="medium"
             source={{
-              uri: imagesrc
+              uri: displaypicture
             }}
             containerStyle={{borderWidth: Fonts.w(1), borderColor: Colors.secondary, padding: Fonts.w(0.5)}}
           />

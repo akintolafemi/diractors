@@ -1,7 +1,7 @@
 import React, {Component, FunctionComponent, useRef, useState} from 'react';
 import {StyleSheet, SafeAreaView, StatusBar, View, Image, TouchableOpacity, Text} from 'react-native';
 import { Button, Input as RNEInput, SocialIcon as RNESocialIcon } from 'react-native-elements';
-import CheckboxFlex from "react-native-checkbox-flex";
+import CheckboxFlex from "../../components/react-native-checkbox-flex";
 
 import {Colors, Fonts, GlobalStyles} from '../../common';
 import {AccountTypes} from '../../common/Constants';
@@ -52,7 +52,7 @@ const SignupScreen: FunctionComponent<Props> = ({navigation}) => {
                 disableDate={true}
                 activeCardBackgroundColor={Colors.primary}
                 activeCheckboxBackgroundColor={Colors.primary}
-                style={{marginBottom: Fonts.h(20)}}
+                style={{marginBottom: Fonts.h(20), marginLeft: Fonts.w(-10)}}
               />)
             })}
           </ScrollableContainer>

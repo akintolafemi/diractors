@@ -77,6 +77,7 @@ const CompletesetupScreen: FunctionComponent<Props> = ({navigation}) => {
           style={styles.selectContainerStyle}
           textStyle={styles.inputStyle}
           transparent={true}
+          backdropStyle={{backgroundColor: Colors.darkText, opacity: 0.8}}
         />
         <Select
           data={Gender}
@@ -88,6 +89,7 @@ const CompletesetupScreen: FunctionComponent<Props> = ({navigation}) => {
           style={styles.selectContainerStyle}
           textStyle={styles.inputStyle}
           transparent={true}
+          backdropStyle={{backgroundColor: Colors.darkText, opacity: 0.8}}
         />
         <Button
           title="Continue"

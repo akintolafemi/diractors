@@ -12,6 +12,9 @@ import { Avatar } from 'react-native-elements';
 import {titleName as titleName} from '../app.json';
 
 import HomeScreen from '../screens/Home';
+import MyProfileScreen from '../screens/Profile';
+import NotificationScreen from '../screens/Messages/Notification';
+
 import NotFoundScreen from '../screens/NotFoundScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
@@ -39,25 +42,57 @@ const routes: Array<DrawerRenderProps> = [
         <RNEIcon name="home-outline" type='ionicon' iconStyle={[{fontSize: Fonts.h(20)}, {color: focused ? Colors.white : Colors.dark}]} />
       )
     },
+    initialParams: {},
   },
   {
-    name: 'TabTwo',
-    component: TabTwoScreen,
+    name: 'MyProfile',
+    component: MyProfileScreen,
     options: {
-      headerShown: false,
+      headerShown: true,
+      title: titleName,
+      headerStyle: {},
+      headerLeft: () => null,
+      headerTitleStyle: {color: Colors.darkText, fontSize: Fonts.h(20), fontFamily: Fonts.AVERTA_SEMIBOLD , fontWeight: '600', marginLeft: Fonts.w(0)},
       gestureEnabled: false,
       drawerLabel: 'My Page',
       drawerIcon: ({focused}) => (
-        <RNEIcon name="newspaper-outline" type='ionicon' iconStyle={[{fontSize: Fonts.h(20)}, {color: focused ? Colors.white : Colors.dark}]} />
+        <RNEIcon name="person-outline" type='ionicon' iconStyle={[{fontSize: Fonts.h(20)}, {color: focused ? Colors.white : Colors.dark}]} />
       )
     },
-  }
+    initialParams: {
+      profile: {
+        id: '1',
+        displayName: 'Angela',
+        fullName: 'Angelina Jolie',
+        displaypicture: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
+        verified: true,
+      }
+    }
+  },
+  {
+    name: 'Notification',
+    component: NotificationScreen,
+    options: {
+      headerShown: true,
+      title: titleName,
+      headerStyle: {},
+      headerLeft: () => null,
+      headerTitleStyle: {color: Colors.darkText, fontSize: Fonts.h(20), fontFamily: Fonts.AVERTA_SEMIBOLD , fontWeight: '600', marginLeft: Fonts.w(0)},
+      gestureEnabled: false,
+      drawerLabel: 'My Notifications',
+      drawerIcon: ({focused}) => (
+        <RNEIcon name="notifications-outline" type='ionicon' iconStyle={[{fontSize: Fonts.h(20)}, {color: focused ? Colors.white : Colors.dark}]} />
+      )
+    },
+    initialParams: {},
+  },
 ];
 
 export function renderScreen({
   name,
   component,
   options = {},
+  initialParams = {}
 }: DrawerRenderProps) {
   return (
     <Drawer.Screen
@@ -65,6 +100,7 @@ export function renderScreen({
       key={name}
       component={component}
       options={options}
+      initialParams={initialParams}
     />
   );
 }
@@ -144,10 +180,9 @@ function CustomDrawerContent({progress, ...rest }) {
         <View style={{alignItems: 'center', borderBottomWidth: Fonts.w(1), borderBottomColor: Colors.dotcColor, paddingBottom: Fonts.h(20), marginBottom: Fonts.h(20)}}>
           <Avatar
             rounded
-            size="large"
+            size="xlarge"
             source={{
-              uri:
-                'https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/128.jpg',
+              uri: 'https://fxtb.lostcryptoescrow.com/assets/img/reviewer-2.png',
             }}
           />
           <View style={{marginTop: Fonts.h(10)}}>

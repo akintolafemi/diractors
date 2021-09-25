@@ -25,6 +25,18 @@ export type RootStackParamList = {
   Landing: undefined;
   Login: undefined;
   Forgotpassword: undefined;
+  SearchedProfile: undefined;
+  SettingsScreen: undefined;
+  PasswordScreen: undefined;
+  PrivacyScreen: undefined;
+  PhoneNumberScreen: undefined;
+  EmailAddressScreen: undefined;
+};
+
+export type DrawerStackParamList = {
+  Home: undefined;
+  Search: undefined;
+  MyProfile: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
